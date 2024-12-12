@@ -1,0 +1,1926 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+body {
+  height: 100vh;
+  background-color: black;
+  
+  background-size: cover;
+  background-position: cover;
+}
+
+
+
+/*   THE UP BOX */
+
+.up-box {
+  background-color: black;
+  padding: 13px 0px;
+}
+
+.up {
+  float: left;
+   width: 30%;
+   margin-left: 12px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.up a {
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+ 
+.up button{
+  width: 30%;
+  padding: 5px 0;
+  border: 3px solid orange;
+  background-color: orange;
+  color: white;
+  transition: color 0,2s ease;
+}
+
+.up button :hover {
+  color: black;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/*   THE UP end */
+
+
+li {
+  list-style: none;
+  text-decoration: none;
+}
+
+.links {
+  display: flex;
+  gap: 10px;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color: orange;
+  text-decoration: none;
+}
+
+header {
+  position: relative;
+  padding: 0 2rem;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-bar .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  gap: 2rem;
+  text-decoration: none;
+}
+
+.nav-bar .toggle_btn {
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  display: none;
+}
+
+.action_btn {
+  background-color: orange;
+  color: white;
+  padding: o.5rem 1rem;
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.action_btn:hover {
+  scale: 1.0s;
+  color: white;
+}
+
+.action_btn:active {
+  scale: 0.95;
+}
+
+
+
+/*  dropdown menu */
+
+.dropdown_menu {
+  position: absolute;
+  height: 0;
+  right: 2rem;
+  top: 60px;
+  width: 300px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+
+
+
+.dropdown_menu.open{
+  height: 630px;
+  
+}
+
+.dropdown_menu li {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+
+.dropdown_menu .action_btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+
+/* hero */
+
+section#hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: black;
+ 
+}
+
+.all {
+  background-color: lightgray;
+  
+}
+
+#hero h1 {
+  margin-top: 60px;
+ font-size: 3rem;
+ margin-bottom: 1rem;
+ color: teal;
+}
+
+#hero p {
+  padding-bottom: 120px;
+  padding-left: 100px;
+  padding-right: 100px;
+ }
+
+
+#hero img {
+  height: 100vh;
+  width: 100% ;
+ 
+
+}
+
+
+
+
+/*  ruler of the menu */
+
+.ruler-up { 
+  width: 100%;
+  border-top: 3px solid black;
+}
+
+.ruler { 
+  width: 100%;
+  border-bottom: 3px solid black;
+}
+
+ .firstchild {
+  color: orange;
+}
+
+
+
+
+
+
+
+
+
+/* table */
+
+
+.table {
+  display: flex;
+  flex-wrap: wrap; /* Allows wrapping of items */
+  gap: 20px; /* Adds space between items */
+  justify-content: center; /* Centers items horizontally */
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional background color */
+  margin-bottom: 4px;
+ 
+}
+ 
+.case {
+  flex: 1 1 calc(33.333% - 40px); /* Responsive layout: 3 columns */
+  max-width: 400px; /* Ensures columns don't get too wide */
+  background-color: #fff;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-bottom: 5px solid  teal;
+}
+
+.case p {
+ margin: 15px 0;
+}
+
+
+.case button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+   margin-top: 15px;
+   margin-bottom: 10px;
+}
+
+
+
+
+.case img {
+  width: 100%; /* Full width within the container */
+  height: 40vh;
+  border-radius: 5px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+  
+@media (max-width: 768px) {
+  .case {
+    flex: 1 1 calc(50% - 40px); /* 2 columns on tablets */
+  }
+}
+
+
+
+@media (max-width: 480px) {
+  
+}
+
+
+
+
+
+
+
+/*the room on the front page*/
+
+
+
+
+/* Section Styling */
+.room-suits {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: lightgray; /* Light background for section */
+  border: 3px solid lightgray;
+   margin-top: -5px;
+   margin-bottom: -5px;
+}
+
+.suits-text-content button {
+  padding: 10px 20px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 20px 0;
+}
+
+.suits-image-content p {
+margin: 15px 0;
+}
+
+.suits-image-content img {
+ 
+ border-bottom: 8px solid teal;
+ border-right: 8px solid teal;
+ 
+}
+
+/*.suits-image-content img:hover {
+  border: 8px solid teal;
+}*/
+
+.suits-text-content h1 {
+margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+/* the sign up form css */
+.sign-up-form {
+  background-color: lightgray;
+  padding: 40px 0;
+  align-items: center;
+  margin-top: -30px;
+}
+
+.sign p {
+  margin-top: 20px;
+}
+
+
+/* the weeding*/
+
+
+.pack {
+  background-color: lightgray;
+   padding: 60px 0;
+}
+
+.keep {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdIt5hgGTU7FCJKjhL0bKtybIAupT6SiVT0A&s);
+ background-size: cover;
+ background-position: cover;
+ height: 70vh;
+ margin: 0 30px;
+
+}
+
+.keep h1 {
+  text-align: center;
+ position: relative;
+ TOP: 200PX;
+ margin: 20px 0;
+ color: white;
+ font-weight: bold;
+}
+
+.keep p {
+  text-align: center;
+  position: relative;
+  TOP: 200PX;
+  margin: 20px 0;
+  color: white;
+ font-weight: bold;
+}
+
+.keep button {
+  position: relative;
+  TOP: 200PX;
+  left: 580px;
+  padding: 10px 50px;
+  background-color: teal;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin: 30px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*  for the boostract  box */
+
+
+.form-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  background-color: teal;
+  margin-top: -29px;
+  margin-bottom: 15px;
+}
+
+.box-container {
+  background-color: whitesmoke;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+form h2 {
+  margin-top: 20px;
+  color: #555;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="number"],
+form input[type="date"],
+form input[type="month"],
+form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  height: 100px;
+  resize: none;
+}
+
+button#submit {
+  width: 100%;
+  padding: 12px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button#submit:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design for the form registration  */
+@media screen and (max-width: 768px) {
+  .box-container {
+    padding: 20px;
+  }
+  form h1 {
+    font-size: 24px;
+  }
+  form input,
+  form textarea,
+  button#submit {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  form label {
+    font-size: 14px;
+  }
+  form input,
+  form textarea,
+  button#submit {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/* the footer codes here  */
+
+
+
+
+.footer-section {
+  background-color: #222;
+  color: #fff;
+  padding: 40px 20px;
+  margin-top: -20px;
+  margin-bottom: -10px;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo a {
+  font-size: 24px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-list {
+  flex: 1 1 30%;
+  margin-bottom: 20px;
+}
+
+.footer-list h1 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 5px;
+  color: #f0f0f0;
+  text-decoration: none;
+}
+
+.footer-list ul {
+  list-style: none;
+}
+
+.footer-list li {
+  margin-bottom: 10px;
+}
+
+.footer-list a {
+  color: #ddd;
+  text-decoration: none;
+  transition: color 0.3s ease;
+ 
+  
+}
+
+.footer-list a:hover {
+  color: #007bff;
+  text-decoration: none;
+ 
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-list {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .footer-logo {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-list h1 {
+    font-size: 16px;
+  }
+
+  .footer-list a {
+    font-size: 17px;
+  }
+
+  .footer-logo a {
+    font-size: 20px;
+  }
+}
+
+
+/* the up style */
+
+.up-link {
+  color: green;
+  font-weight: bold;
+  justify-content: space-between;
+}
+.up-link:hover {
+  color: black;
+}
+
+
+/* coming here for the meune sldes*/
+
+
+
+.slider-container {
+  max-width: 600px;
+  margin: 40px auto;
+  position: relative;
+  overflow: hidden;
+
+}
+
+h1 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.slider-wrapper {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slider img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: lightgrey;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 100;
+  border-radius: 5px;
+}
+
+.prev-btn {
+  left: 10px;
+}
+
+.next-btn {
+  right: 10px;
+}
+
+.nav-btn:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 600px) {
+  .nav-btn {
+    font-size: 18px;
+    padding: 8px 16px;
+  }
+}
+   
+
+
+
+
+/* the section splash */
+
+
+
+
+.splash {
+  position: relative;
+  padding: 40px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -40px;
+  margin-bottom: -40px;
+}
+
+.full-block {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.full-block img {
+  flex: 1 1 50%;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+}
+
+.content {
+  flex: 1 1 50%;
+  padding: 30px;
+  background-color: #fff;
+}
+
+.splash-heading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #0077b6;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.splash-description, .splash-pricing {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+button {
+  padding: 12px 24px;
+  background-color: #0077b6;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #005f8d;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .full-block {
+    flex-direction: column;
+  }
+
+  .full-block img {
+    border-radius: 10px 10px 0 0;
+  }
+
+  .content {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 28px;
+  }
+
+  .splash-description, .splash-pricing {
+    font-size: 14px;
+  }
+
+  button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .splash-heading {
+    font-size: 18px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
+
+
+
+
+
+
+/* contact form details */
+
+
+.pack {
+  background-color: lightgray;
+  margin-top: -23px;
+}
+
+
+.pap {
+  text-align: center;
+  padding: 20px;
+  background-color: #007BFF;
+  color: white;
+}
+
+.container-contact {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+.container-contact h1 {
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.container-contact p  {
+  margin-bottom: 10px;
+}
+
+ .container-contact a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Booking Button */
+.booking-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.booking-button:hover {
+  background-color: #218838;
+}
+
+/* Input & Button Styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.hidden {
+  display: none;
+}
+
+footer {
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input, textarea, button {
+    font-size: 14px;
+  }
+}
+
+
+
+/* the job opportunites page        */
+
+
+
+.opp-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.opp-container h2{
+  color: #0056b3;
+  margin-bottom: 10px;
+}
+
+.opp-container p {
+  margin-bottom: 15px;
+}
+
+.job {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.job h3 {
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.apply-button {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.apply-button:hover {
+  background-color: #218838;
+}
+
+/* Form Styling */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+footer {
+  text-align: center;
+  background-color: #007BFF;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+  h1, h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  input, select, textarea, button {
+    font-size: 14px;
+  }
+}
+
+
+
+
+/*  jenny div */
+
+
+.jenny img {
+  width: 100%;
+  height: 50vh;
+}
+
+
+
+
+
+
+
+
+/* voucher page       */
+
+
+
+
+
+.vo {
+  text-align: center;
+  padding: 20px;
+  background-color: #d35400;
+  color: white;
+}
+
+.voucher-container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.voucher-container h2 {
+  color: #d35400;
+  margin-bottom: 20px;
+}
+
+/* Voucher Cards */
+.vouchers {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.voucher-card {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.voucher-card h3 {
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #d35400;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #e67e22;
+}
+
+footer {
+  text-align: center;
+  background-color: #d35400;
+  color: white;
+  padding: 10px 0;
+  margin-top: 20px;
+  border-radius: 8px 8px 0 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .vouchers {
+    flex-direction: column;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* blog styles */
+
+
+
+
+.blog-section {
+  background-color: white;
+  margin-top: -13px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin-bottom: 3px;
+}
+
+.blog-section p {
+  color: black;
+}
+
+.blog-section  li a {
+  color: black;
+  line-height: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+.menu-blog {
+ margin-top: 10px;
+  margin-bottom: 10px;
+  padding-left: 3px;
+  padding-right: 3px;
+}
+
+.number img {
+  align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* the booking webistes */
+
+
+.bok {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.bok h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.bok p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.main-2 {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#offers {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.offer {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.offer h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.offer p {
+  color: #666;
+}
+
+.offer .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+.offer button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.offer button:hover {
+  background-color: #0056b3;
+}
+
+#booking-summary {
+  margin-top: 30px;
+}
+
+#booking-summary h2 {
+  margin-bottom: 20px;
+}
+
+#booking-items p {
+  color: #666;
+}
+
+#total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#checkout-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+
+
+
+/*checkout*/
+
+
+
+
+
+
+.check {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.check {
+  margin: 0;
+}
+
+.main-3 {
+  padding: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.summary {
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  margin-top: 0;
+}
+
+#booking-details p {
+  margin: 5px 0;
+}
+
+#checkout-total {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #218838;
+}
+
+
+
+
+/* the offer page styles */
+
+
+.offer-8 {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.offer-8 h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+.offer-8 p {
+  font-size: 1.2rem;
+  margin: 10px 0 0;
+}
+
+.milk {
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+#offers-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.offer-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  position: relative;
+}
+
+.offer-card h3 {
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.offer-card p {
+  color: #666;
+}
+
+.offer-card .price {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #28a745;
+  margin: 10px 0;
+}
+
+.offer-card button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.offer-card button:hover {
+  background-color: #0056b3;
+}
+
+#summary-section-3 {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#selected-offers p {
+  color: #666;
+}
+
+#total-section {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+#checkout-btn {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+#checkout-btn:hover {
+  background-color: #218838;
+}
+
+
+
+
+
+/* the FAQS of the websites*/
+
+
+
+.faq-container {
+  max-width: 800px;
+  margin: 50px auto;
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+/* FAQ items */
+
+
+.faq-item {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  color: green;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 16px;
+}
+
+.faq-question h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.toggle-btn {
+  font-size: 18px;
+  color: #007BFF;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.toggle-btn.rotate {
+  color: white;
+}
+
+.faq-answer {
+  display: none;
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  
+}
+
+
+/*the best part */
+
+.hero-plug {
+  background: url('accessibility-banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-plug h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-plug p {
+  font-size: 1.2rem;
+}
+
+.accessibility-info {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.accessibility-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.accessibility-info h3 {
+  font-size: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.accessibility-info ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.accessibility-info ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+
+/*privacy policy styles */
+
+
+
+.hero-bang {
+  background: url('privacy-banner.jpg') no-repeat center center/cover;
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem;
+}
+
+.hero-bang  h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero-bang  p {
+  font-size: 1.2rem;
+}
+
+.policy-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.policy-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.policy-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.policy-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+
+
+/* the terms and conditions */
+
+.e-commerce {
+  background-color: lightgray;
+}
+
+.terms-content {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.terms-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.terms-content ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.terms-content ul li {
+  margin-bottom: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  background: #00539C;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+
+/* join the the teams styles */
+
+
+
+.team-info {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.team-info h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.team-info ul {
+  list-style: disc inside;
+  margin: 0;
+  padding: 0;
+}
+
+.team-info ul li {
+  margin-bottom: 0.5rem;
+}
+
+.team-info a {
+  color: #00539C;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.team-info a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  background: #00539C;
+  color: #fff;
+  padding: 1rem 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  websites general   responsivness*/
+
+
+@media (max-width: 992px) {
+  .navbar .links,
+  .nav-bar .action_btn {
+    display: none;
+  }
+
+  .nav-bar .toggle_btn {
+    display: block;
+  }
+
+  .dropdown_menu {
+    display: block;
+  }
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 700px) {
+  #hero img {
+   height: 50vh;
+   width: 100%;
+   margin-top: 50px;
+  
+  }
+  
+
+
+.room-suits {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: lightgray; /* Light background for section */
+    border: 3px solid lightgray;
+     margin-top: -5px;
+     margin-bottom: -5px;
+     
+  }
+
+
+
+}
+
+@media (min-width: 600px) {
+  #hero img {
+   height: 50vh;
+   width: 100%;
+   margin-top: 50px;
+  
+  }
+
+  }
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 576px) {
+.dropdown_menu {
+  left: 2rem;
+  width: unset;
+}
+
+.nav-bar ul {
+  display: none;
+}
+
+/* mobile for up div */
+.up {
+  float: left;
+   width: 20%;
+   margin-left: 12px;
+}
+.clearfix {
+  clear: both;
+}
+
+.up a {
+  width: 20px;
+  background-color: orange;
+  border: 3px solid orange;
+  padding: 5px 6px;
+  text-align: center;
+  
+}
+
+/*  hero image  */
+
+
+#hero img {
+  height: 50vh;
+  width: 100%;
+  margin-top: 50px;
+}
+
+
+
+
+#hero p {
+  padding-bottom: 70px;
+ 
+ }
+
+
+
+
+.case {
+  flex: 1 1 100%; /* 1 column on small screens */
+}
+
+.keep button {
+  
+  
+  left: 150px;
+  
+   
+}
+
+}
