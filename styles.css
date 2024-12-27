@@ -1765,6 +1765,7 @@ footer {
 .main-two {
 background-color: white;
 border: 10px solid whitesmoke;
+margin-top:-10px;
 padding-top: 30px;
 padding-bottom: -10px;
 }
