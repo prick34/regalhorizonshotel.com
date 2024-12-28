@@ -1897,7 +1897,57 @@ footer {
 
 
 
+  .check-slide-section {
+ 
+  display: inline;
+  gap: 1rem;
+ padding: -10px 0;
+ flex: 5px;
+}
+
+
+.label-head input {
+  max-width: 100%;
+
+}
+
+.label-head label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #FF1493;
+}
+
+
+
+.label-number input {
+  max-width: 100%;
+   
+}
+
+.label-number label {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: #FF1493;
+}
+
+
+
+
+.but-div button {
+  max-width: 100%;
+  padding: 8px 14px;
+  color: white;
+  background-color: #FF1493;
+  font-size: 0.9rem;
   
+}
+
+
+.main-fr {
+  
+  padding-bottom: 30px;
+  
+}
 
 
 
@@ -1977,10 +2027,23 @@ footer {
 
 .keep button {
   
-  
   left: 150px;
-  
    
 }
+
+
+.label-head input {
+  width: 150%;
+
+}
+
+
+
+.label-number input {
+  width: 150%;
+   
+}
+
+  
 
 }
