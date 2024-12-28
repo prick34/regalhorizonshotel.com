@@ -1789,7 +1789,7 @@ footer {
 
 .label-head input {
   width: 150%;
-  padding: 10px 20px;
+  padding: 10px 0px;
   outline: none;
   border: 4px solid #FFD700;
   text-align: left;
