@@ -1952,10 +1952,6 @@ footer {
   
 }
 
-header {
-  background-color: black;
-    margin-top: -40px;
-}
 
 }
 
@@ -1968,6 +1964,10 @@ header {
   }
 
 
+header {
+  background-color: black;
+     margin-bottom: -40px; 
+}
 
   
 
