@@ -1917,7 +1917,7 @@ footer {
 
 
 .label-head input {
-  max-width: 100%;
+  max-width: 70%;
 
 }
 
@@ -1930,7 +1930,7 @@ footer {
 
 
 .label-number input {
-  max-width: 100%;
+  max-width: 70%;
    
 }
 
@@ -1944,7 +1944,7 @@ footer {
 
 
 .but-div button {
-  max-width: 100%;
+  max-width: 70%;
   padding: 8px 14px;
   color: white;
   background-color: #FF1493;
