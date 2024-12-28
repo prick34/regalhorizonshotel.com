@@ -1908,7 +1908,7 @@ footer {
 
 
   .check-slide-section {
- 
+ border: 3px solid #FFD700;
   display: inline;
   gap: 1rem;
  padding: -10px 0;
@@ -1917,7 +1917,7 @@ footer {
 
 
 .label-head input {
-  max-width: 70%;
+  max-width: 100%;
 
 }
 
@@ -1930,7 +1930,7 @@ footer {
 
 
 .label-number input {
-  max-width: 70%;
+  max-width: 100%;
    
 }
 
@@ -1944,7 +1944,7 @@ footer {
 
 
 .but-div button {
-  max-width: 70%;
+  max-width: 100%;
   padding: 8px 14px;
   color: white;
   background-color: #FF1493;
