@@ -1964,6 +1964,13 @@ footer {
   
   }
 
+header {
+  background-color: black;
+  margin-bottom: -40px;
+}
+
+  
+
   }
 
 
@@ -2048,10 +2055,6 @@ footer {
 }
 
 
-header {
-  background-color: black;
-  margin-bottom: -40px;
-}
 
   
 
