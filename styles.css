@@ -218,6 +218,8 @@ section#hero{
   padding-bottom: 120px;
   padding-left: 100px;
   padding-right: 100px;
+  border-bottom: 3px solid black;
+  width: 100%;
  }
 
 
@@ -228,10 +230,7 @@ section#hero{
 
 }
 
-.dove {
-  border-bottom: 3px solid black;
-  width: 100%;
-}
+
 
 
 
